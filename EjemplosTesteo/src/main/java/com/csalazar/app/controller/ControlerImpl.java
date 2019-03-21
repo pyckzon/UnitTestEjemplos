@@ -12,27 +12,25 @@ public class ControlerImpl implements InterfaceController {
 	@Autowired
 	private InterfaceService service;
 	
-	
 	@Override
-	public String Sumar(int num1, int num2) {
+	public int Sumar(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return service.Sumar(num1, num2);
+		int  a = service.Sumar(num1, num2);
+		return a;
 	}
-
 	@Override
-	public String Restar(int num1, int num2) {
+	public int Restar(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return service.Dividir(num1, num2);
+		return service.Restar(num1, num2);
 	}
-
 	@Override
-	public String Multiplicar(int num1, int num2) {
+	public int Multiplicar(int num1, int num2) {
 		// TODO Auto-generated method stub
 		return service.Multiplicar(num1, num2);
 	}
 
 	@Override
-	public String Dividir(int num1, int num2) {
+	public int Dividir(int num1, int num2) {
 		// TODO Auto-generated method stub
 		return service.Dividir(num1, num2);
 	}

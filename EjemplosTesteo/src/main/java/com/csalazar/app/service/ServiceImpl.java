@@ -6,27 +6,27 @@ import org.springframework.stereotype.Service;
 public class ServiceImpl implements InterfaceService {
 	
 	@Override
-	public String Sumar(int num1, int num2) {
+	public int Sumar(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return "Resultado= "+(num1+num2);
+		return num1+num2;
 	}
 
 	@Override
-	public String Restar(int num1, int num2) {
+	public int Restar(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return "Resultado= "+(num1-num2);
+		return num1-num2;
 	}
 
 	@Override
-	public String Multiplicar(int num1, int num2) {
+	public int Multiplicar(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return "Resultado= "+(num1*num2);
+		return num1*num2;
 	}
 
 	@Override
-	public String Dividir(int num1, int num2) {
+	public int Dividir(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return "Resultado= "+(num1/num2);
+		return num1/num2;
 	}
 
 }
